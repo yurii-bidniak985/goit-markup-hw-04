@@ -290,10 +290,6 @@ address a:focus {
     padding-bottom: 72px 0;
 }
 
-/* .icon-soc {
-    margin: 12px;
-} */
-
 .three-hero {
     display: flex;
     padding: 120px 0;
@@ -304,18 +300,20 @@ address a:focus {
 .icon-list-wrapper {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
    
 } 
 
 .icon-link {
     display: flex;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     background-color: #4d5ae5;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
 }
 
 .icon-soc {
@@ -323,8 +321,9 @@ address a:focus {
 }
 
 .icon-icom-box {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
+    
 }
 
 
@@ -454,6 +453,15 @@ address a:focus {
     margin-right: 76px;
 }
 
+.logo-wrapper {
+    max-width: 264px;
+    margin-right: 120px;
+}
+
+.social-wrapper {
+    max-width: 208px;
+}
+
 .foot-p {
     line-height: 1.5;
     color: #F4F4FD;
@@ -463,8 +471,7 @@ address a:focus {
     font-weight: 400;
     font-size: 16px;
     display: block;
-    padding-top: 16px;
-    max-width: 300px;
+   
 }
 
 footer {
@@ -474,3 +481,22 @@ footer {
 .foot-style {
     padding: 100px 0;
 }
+
+.foot-style .container {
+    display: flex;
+
+}
+
+.last-name {
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    
+    
+
+}
+
