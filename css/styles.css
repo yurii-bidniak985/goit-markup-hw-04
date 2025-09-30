@@ -71,13 +71,23 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    border-radius: 2px;
+    
 }
 
 .nav-link:hover,
 .nav-link:focus {
     color: #404bbf;
 }
-
+/*
+.nav-link:hover::before,
+.nav-link:focus::after {
+    border: 2px solid #404BBF;
+        width: 48px;
+        height: 4px;
+        border-radius: 2px;
+}
+*/
 h1,
 h2,
 h3,
@@ -104,10 +114,7 @@ p {
 }
 
 
-.container-portfolio {
-    /* padding: 32px 16px; */
-    
-}
+
 
 .contacts-list {
     display: flex;
@@ -172,6 +179,14 @@ address a:focus {
     align-items: center;
     background-color: #2E2F42;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+    url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .one-name {
@@ -220,6 +235,19 @@ address a:focus {
     flex-wrap: wrap;
 }
 
+.spdt-img {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+} 
+
+.spdt-box {
+    margin: 24px 100px;
+} 
+
 .spdt-list {
     width: calc((100% - 72px) / 4);
 }
@@ -241,8 +269,10 @@ address a:focus {
     color: #434455;
 }
 
+
+
 .container-name {
-    padding: 32px 0
+    padding: 32px 0;
 }
 
 .three {
@@ -259,11 +289,36 @@ address a:focus {
     padding-bottom: 72px 0;
 }
 
+/* .icon-soc {
+    margin: 12px;
+} */
+
 .three-hero {
     display: flex;
     padding: 120px 0;
     text-align: center;
 }
+
+.icon-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+    margin-top: 8px;
+   
+} 
+
+.icom-box {
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
 
 .portfolio {
     display: flex;
@@ -282,6 +337,34 @@ address a:focus {
     border: 1px solid #e7e9fc;
     border-top: none;
     padding: 32px 16px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px 164px 32px;
+
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.box:hover .overlay {
+    transform: translateY(0);
 }
 
 .three-name {
